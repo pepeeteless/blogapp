@@ -1,0 +1,22 @@
+{{#if error_msg}}
+  <div class="alert alert-danger">{{error_msg}}</div>
+{{/if}}
+
+{{#if success_msg}}
+  <div class="alert alert-success">{{success_msg}}</div>
+{{/if}}
+
+<h4>Login:</h4><br>
+<div class="card">
+    <div class="card-body">
+        <form action="/usuarios/login" method="post">
+
+            <label for="email">Email: </label>
+            <input type="email" class="form-control" name="email" required>
+            <label for="email">Senha: </label>
+            <input type="password" class="form-control" name="senha" required>
+            <a href=""><button class="btn btn-success mt-4" type="submit">Entrar</button></a>
+
+        </form>
+    </div>
+</div>
